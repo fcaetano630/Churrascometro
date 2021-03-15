@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churrascometro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container bg-light">
+      <div class="row" id="row">
+        <div class="col-7">
+          <h1>Churrascômetro</h1>
+          <div>
+            <p>
+              Calcule o quanto é necessário de alimento e bebidas para fazer um
+              bom churrasco! Preencha o número de participantes e a duração do
+              churrasco em horas.
+            </p>
+          </div>
+        </div>
+        <div class="col-5" id="calculo">
+          <input
+            id="adultos"
+            type="number"
+            name="Adultos"
+            placeholder="Adultos"
+          />
+          <input
+            id="criancas"
+            type="number"
+            name="Criancas"
+            placeholder="Crianças"
+          />
+          <input
+            id="duracao"
+            type="number"
+            name="Duração"
+            placeholder="Duração"
+          />
+          <button class="btn btn-success">Enviar</button>
+        </div>
+      </div>
+      <div id="resultado" class="bg-secondary text-dark resultado"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
